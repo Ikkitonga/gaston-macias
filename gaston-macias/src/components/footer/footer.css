@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-background-light);
+    height: 12vh;
+}
+
+.logo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.texto__footer {
+    font-family: "Source Code Pro", monospace;
+    color: var(--color-primary-dark);
+}
+
+.iconos-sociales {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+}
