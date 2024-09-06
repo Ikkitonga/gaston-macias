@@ -32,7 +32,7 @@ const Navbar = () => {
 
 
     return <header className="header">
-        <h1 className="logo">GM</h1>
+        <h2 className="logo">GM</h2>
         <button className="abrir-menu" id="abrir"><CiMenuBurger /></button>
         <nav className="nav" id="nav">
             <button className="cerrar-menu" id="cerrar"><IoClose /></button>

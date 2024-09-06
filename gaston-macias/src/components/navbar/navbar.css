@@ -1,9 +1,16 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1.5rem;
     background-color: var(--color-background-light);
+    
+}
+
+.logo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--color-primary);
 }
 
 .nav__list {
@@ -18,6 +25,9 @@
     padding: 0.5rem 1rem;
     text-decoration: none;
     width: 7rem;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
 }
 
 .abrir-menu,
