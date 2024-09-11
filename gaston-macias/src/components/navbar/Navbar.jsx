@@ -1,9 +1,37 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
 import "./navbar.css";
 
+// modales
+
+import ModalQuienSoy from "../modalQuienSoy/ModalQuienSoy";
+import ModalHabilidades from "../modalHabilidades/ModalHabilidades";
+import ModalEducacion from "../modalEducacion/ModalEducacion";
+import ModalContacto from "../modalContacto/ModalContacto";
+
+
 const Navbar = () => {
+
+    // manejo los estados de cada modal
+
+    const [modalQuienSoy, setModalQuienSoy] = useState(false);
+    const modalQuienSoyClose = () => setModalQuienSoy(false);
+    const modalQuienSoyOpen = () => setModalQuienSoy(true);
+
+    const [modalHabilidades, setModalHabilidades] = useState(false);
+    const modalHabilidadesClose = () => setModalHabilidades(false);
+    const modalHabilidadesOpen = () => setModalHabilidades(true);
+
+    const [modalEducacion, setModalEducacion] = useState(false);
+    const modalEducacionClose = () => setModalEducacion(false);
+    const modalEducacionOpen = () => setModalEducacion(true);
+
+    const [modalContacto, setModalContacto] = useState(false);
+    const modalContactoClose = () => setModalContacto(false); 
+    const modalContactoOpen = () => setModalContacto(true);
+
+
     useEffect(() => {
         const nav = document.querySelector("#nav");
         const abrir = document.querySelector("#abrir");
@@ -37,12 +65,16 @@ const Navbar = () => {
         <nav className="nav" id="nav">
             <button className="cerrar-menu" id="cerrar"><IoClose /></button>
             <ul className="nav__list">
-                <li className="list__item"><button>Quien soy</button></li>
-                <li className="list__item"><button>Habilidades</button></li>
-                <li className="list__item"><button>Educación</button></li>
-                <li className="list__item"><button>Contacto</button></li>
+                <li className="list__item"><button onClick={modalQuienSoyOpen}>Quien soy</button></li>
+                <li className="list__item"><button onClick={modalHabilidadesOpen}>Habilidades</button></li>
+                <li className="list__item"><button onClick={modalEducacionOpen}>Educación</button></li>
+                <li className="list__item"><button onClick={modalContactoOpen}>Contacto</button></li>
             </ul>
         </nav>
+        <ModalQuienSoy show={modalQuienSoy} handleClose={modalQuienSoyClose}/>
+        <ModalHabilidades show={modalHabilidades} handleClose={modalHabilidadesClose}/>
+        <ModalEducacion show={modalEducacion} handleClose={modalEducacionClose}/>
+        <ModalContacto show={modalContacto} handleClose={modalContactoClose}/>
     </header>
 }
 

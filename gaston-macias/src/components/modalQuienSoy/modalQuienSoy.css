@@ -1,0 +1,69 @@
+/* Estilos base para el modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background-light-modal); /* Fondo semitransparente */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+/* Cuando el modal está activo */
+.modal.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Contenedor del contenido del modal */
+.modal-container {
+    background-color: var(--color-background-extra-light);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.741); /* Sombra sutil */
+    position: relative;
+}
+
+/* Estilo para el encabezado del modal */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2{
+    text-align: center;
+}
+
+/* Botón de cerrar */
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Estilos del contenido dentro del modal */
+.modal-datos {
+    margin-top: 20px;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Para mejorar la apariencia del botón al pasar el mouse */
+.modal-close:hover {
+    color: var(--color-primary-dark);
+}
