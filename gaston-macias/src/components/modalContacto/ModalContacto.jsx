@@ -1,3 +1,4 @@
+import SeccionContacto from "../seccionContacto/SeccionContacto";
 
 
 
@@ -13,10 +14,7 @@ const ModalContacto = ({show, handleClose}) => {
                     <button className="modal-close" onClick={handleClose}>X</button>
                 </div>
                 <div className="modal-datos">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reprehenderit rerum ab harum pariatur, quibusdam ullam libero
-                        at nulla delectus voluptatibus, alias eaque repellat,
-                        exercitationem explicabo magni suscipit non id asperiores.</p>
+                    <SeccionContacto />
                 </div>
             </div>
         </article>
