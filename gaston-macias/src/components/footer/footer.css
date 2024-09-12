@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-around;
     background: linear-gradient(var(--color-background-extra-light), var(--color-primary-dark));
-    height: 12vh;
+    height: 15vh;
 }
 
 .logo {

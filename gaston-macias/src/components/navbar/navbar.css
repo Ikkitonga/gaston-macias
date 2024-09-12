@@ -4,6 +4,8 @@
     justify-content: space-around;
     padding: 1.5rem;
     background: linear-gradient(var(--color-primary-dark), var(--color-background-extra-light));
+    height: 15vh;
+
 }
 
 .logo {
@@ -36,7 +38,7 @@
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
     .abrir-menu,
     .cerrar-menu {
         display: block;
