@@ -12,99 +12,91 @@ const LineaDeTiempoVertical = () => {
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="2011 - present"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    contentStyle={{ background: '#c9d2ee', color: '#5c7dd2' }}
+                    contentArrowStyle={{ borderRight: '7px solid #c9d2ee' }}
+                    date="2019 - 2022"
+                    iconStyle={{ background: '#c9d2ee', color: '#fff' }}
                     icon={<FaBriefcase />}
                 >
-                    <h3 className="vertical-timeline-element-title">Creative Director</h3>
+                    <h3 className="vertical-timeline-element-title">Crexel SRL.</h3>
                     <h4 className="vertical-timeline-element-subtitle">Buenos Aires, Arg</h4>
-                    <p>
-                        Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                    <p className="vertical-timeline-element-text">
+                        Instalación, puesta en marcha y reparacion de sistemas de energia ininterrumpida
+                        (UPS).
                     </p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="2010 - 2011"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    date="2015 - 2019"
+                    iconStyle={{ background: '#fff', color: '#5c7dd2' }}
                     icon={<FaBriefcase />}
                 >
-                    <h3 className="vertical-timeline-element-title">Art Director</h3>
+                    <h3 className="vertical-timeline-element-title">Diginex</h3>
                     <h4 className="vertical-timeline-element-subtitle">Buenos Aires, Arg</h4>
-                    <p>
-                        Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                    </p>
+                    <p className="vertical-timeline-element-text">Instalación, puesta en marcha y reparacion de sistemas de energia ininterrumpida
+                        (UPS).</p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="2008 - 2010"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    contentStyle={{ background: '#c9d2ee', color: '#5c7dd2' }}
+                    contentArrowStyle={{ borderRight: '7px solid #c9d2ee' }}
+                    date="2010 - 2014"
+                    iconStyle={{ background: '#c9d2ee', color: '#fff' }}
                     icon={<FaBriefcase />}
                 >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
+                    <h3 className="vertical-timeline-element-title">APC by Schneider Electric</h3>
                     <h4 className="vertical-timeline-element-subtitle">Buenos Aires, Arg</h4>
-                    <p>
-                        User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2006 - 2008"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<FaBriefcase />}
-                >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Buenos Aires, Arg</h4>
-                    <p>
-                        User Experience, Visual Design
+                    <p className="vertical-timeline-element-text">
+                        Soporte telefónico a clientes, pedido de garantías y atención a centros autorizados
+                        de servicios de cono sur
                     </p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
-                    date="April 2013"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                    date="2023 - 2024"
+                    iconStyle={{ background: '#fff', color: '#5c7dd2' }}
                     icon={<IoSchoolOutline />}
                 >
-                    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
+                    <h3 className="vertical-timeline-element-title">Curso Oracle/Alura</h3>
                     <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                    <p>
-                        Strategy, Social Media
+                    <p className="vertical-timeline-element-text">
+                        Curso de Desarrollo Frontend (HTML, CSS, JS y React)
                     </p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
+                    contentStyle={{ background: '#c9d2ee', color: '#5c7dd2' }}
+                    contentArrowStyle={{ borderRight: '7px solid #c9d2ee' }}
                     date="November 2012"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                    iconStyle={{ background: '#c9d2ee', color: '#fff' }}
                     icon={<IoSchoolOutline />}
                 >
-                    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
+                    <h3 className="vertical-timeline-element-title">Testing QA Manual</h3>
                     <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                    <p>
-                        Creative Direction, User Experience, Visual Design
+                    <p className="vertical-timeline-element-text">
+                        Certificacion de Testing QA dado por MindHub LA
                     </p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
                     className="vertical-timeline-element--education"
                     date="2002 - 2006"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                    iconStyle={{ background: '#fff', color: '#5c7dd2' }}
                     icon={<IoSchoolOutline />}
                 >
-                    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                    <p>
-                        Creative Direction, Visual Design
+                    <h3 className="vertical-timeline-element-title">Responsive Web Design</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Certificacion</h4>
+                    <p className="vertical-timeline-element-text">
+                        Certificacion de Diseño Web Responsive
                     </p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                    iconStyle={{ background: '#e4e5fb', color: '#5c7dd2' }}
                     icon={<FaStar />}
                 />
             </VerticalTimeline>
