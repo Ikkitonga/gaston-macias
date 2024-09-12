@@ -13,6 +13,7 @@
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 1000; /* Asegura que esté encima de otros elementos */
+    
 }
 
 /* Cuando el modal está activo */
@@ -39,8 +40,9 @@
     align-items: center;
 }
 
-.modal-header h2{
-    text-align: center;
+.quienSoy-header {
+    font-family: "Poppins", sans-serif;
+    color: var(--color-primary);
 }
 
 /* Botón de cerrar */
@@ -59,11 +61,24 @@
 .modal-datos {
     margin-top: 20px;
     color: #333;
-    font-size: 1rem;
+    font-size: 0.80rem;
     line-height: 1.5;
+}
+
+.datos-quienSoy {
+    font-family: "Source Code Pro", monospace;
+    color: var(--color-primary-dark);
 }
 
 /* Para mejorar la apariencia del botón al pasar el mouse */
 .modal-close:hover {
     color: var(--color-primary-dark);
+}
+
+.resalte-quienSoy {
+    font-family: "Poppins", sans-serif;
+    color: var(--color-accent);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
