@@ -3,8 +3,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,10 +27,12 @@
     background-color: var(--color-background-extra-light);
     padding: 20px;
     border-radius: 8px;
-    max-width: 500px;
+    max-width: 700px; /* ancho maximo del modal */
     width: 100%;
+    max-height: 80vh; /* Limita la altura del modal al 80% de la altura de la ventana */
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.741); /* Sombra sutil */
     position: relative;
+    overflow-y: auto;
 }
 
 /* Estilo para el encabezado del modal */
@@ -38,12 +40,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.quienSoy-header {
     font-family: "Poppins", sans-serif;
     color: var(--color-primary);
+    text-transform: uppercase;
 }
+
 
 /* Botón de cerrar */
 .modal-close {
