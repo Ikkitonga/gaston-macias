@@ -13,7 +13,6 @@
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 1000; /* Asegura que esté encima de otros elementos */
-    
 }
 
 /* Cuando el modal está activo */
@@ -25,7 +24,7 @@
 /* Contenedor del contenido del modal */
 .modal-container {
     background-color: var(--color-background-extra-light);
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
     max-width: 700px; /* ancho maximo del modal */
     width: 100%;
