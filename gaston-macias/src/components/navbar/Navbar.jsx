@@ -7,7 +7,7 @@ import "./navbar.css";
 
 import ModalQuienSoy from "../modalQuienSoy/ModalQuienSoy";
 import ModalHabilidades from "../modalHabilidades/ModalHabilidades";
-import ModalEducacion from "../modalEducacion/ModalEducacion";
+import ModalCarrera from "../modalCarrera/ModalCarrera";
 import ModalContacto from "../modalContacto/ModalContacto";
 
 
@@ -23,9 +23,9 @@ const Navbar = () => {
     const modalHabilidadesClose = () => setModalHabilidades(false);
     const modalHabilidadesOpen = () => setModalHabilidades(true);
 
-    const [modalEducacion, setModalEducacion] = useState(false);
-    const modalEducacionClose = () => setModalEducacion(false);
-    const modalEducacionOpen = () => setModalEducacion(true);
+    const [modalCarrera, setModalCarrera] = useState(false);
+    const modalCarreraClose = () => setModalCarrera(false);
+    const modalCarreraOpen = () => setModalCarrera(true);
 
     const [modalContacto, setModalContacto] = useState(false);
     const modalContactoClose = () => setModalContacto(false); 
@@ -67,13 +67,13 @@ const Navbar = () => {
             <ul className="nav__list">
                 <li className="list__item"><button onClick={modalQuienSoyOpen}>Quien soy</button></li>
                 <li className="list__item"><button onClick={modalHabilidadesOpen}>Habilidades</button></li>
-                <li className="list__item"><button onClick={modalEducacionOpen}>Educación</button></li>
+                <li className="list__item"><button onClick={modalCarreraOpen}>Carrera</button></li>
                 <li className="list__item"><button onClick={modalContactoOpen}>Contacto</button></li>
             </ul>
         </nav>
         <ModalQuienSoy show={modalQuienSoy} handleClose={modalQuienSoyClose}/>
         <ModalHabilidades show={modalHabilidades} handleClose={modalHabilidadesClose}/>
-        <ModalEducacion show={modalEducacion} handleClose={modalEducacionClose}/>
+        <ModalCarrera show={modalCarrera} handleClose={modalCarreraClose}/>
         <ModalContacto show={modalContacto} handleClose={modalContactoClose}/>
     </header>
 }
