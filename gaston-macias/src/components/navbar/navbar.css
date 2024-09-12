@@ -3,14 +3,13 @@
     align-items: center;
     justify-content: space-around;
     padding: 1.5rem;
-    background-color: var(--color-background-light);
-    
+    background: linear-gradient(var(--color-primary-dark), var(--color-background-extra-light));
 }
 
 .logo {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-primary-dark);
 }
 
 .nav__list {
@@ -28,6 +27,7 @@
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
+    border-radius: 15px;
 }
 
 .abrir-menu,

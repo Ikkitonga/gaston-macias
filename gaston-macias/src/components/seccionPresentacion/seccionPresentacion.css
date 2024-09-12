@@ -5,7 +5,7 @@
     justify-content: center;
     height: 70vh;
     text-align: center;
-    background-color: #f0f4f8; /* Fondo claro que puede adaptarse bien con la paleta 'Ocean Breeze' */
+    background-color: var(--color-background-extra-light); /* Fondo claro que puede adaptarse bien con la paleta 'Ocean Breeze' */
     color: var(--color-primary-dark);
     padding: 2rem;
     font-family: "Poppins", sans-serif;
