@@ -1,4 +1,6 @@
-
+import SeccionHabilidades from "../seccionHabilidadesFront/SeccionHabilidadesFront";
+import SeccionHabilidadesTesting from "../seccionHabilidadesTesting/SeccionHabilidadesTesting";
+import "./modalHabilidades.css";
 
 
 const ModalHabilidades = ({show, handleClose}) => {
@@ -13,10 +15,12 @@ const ModalHabilidades = ({show, handleClose}) => {
                     <button className="modal-close" onClick={handleClose}>X</button>
                 </div>
                 <div className="modal-datos">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reprehenderit rerum ab harum pariatur, quibusdam ullam libero
-                        at nulla delectus voluptatibus, alias eaque repellat,
-                        exercitationem explicabo magni suscipit non id asperiores.</p>
+                    <h3>Habilidades Frontend</h3>
+                    <SeccionHabilidades />
+                </div>
+                <div className="modal-datos">
+                    <h3>Habilidades Testing</h3>
+                    <SeccionHabilidadesTesting />
                 </div>
             </div>
         </article>
