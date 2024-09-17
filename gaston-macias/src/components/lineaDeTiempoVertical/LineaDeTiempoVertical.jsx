@@ -11,6 +11,47 @@ const LineaDeTiempoVertical = () => {
         <>
             <VerticalTimeline>
                 <VerticalTimelineElement
+                    className="vertical-timeline-element--education"
+                    date="2023 - 2024"
+                    iconStyle={{ background: '#fff', color: '#5c7dd2' }}
+                    icon={<IoSchoolOutline />}
+                >
+                    <h3 className="vertical-timeline-element-title">Curso Oracle/Alura</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+                    <p className="vertical-timeline-element-text">
+                        Curso de Desarrollo Frontend (HTML, CSS, JS y React)
+                    </p>
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--education"
+                    contentStyle={{ background: '#c9d2ee', color: '#5c7dd2' }}
+                    contentArrowStyle={{ borderRight: '7px solid #c9d2ee' }}
+                    date="2022 - 2023"
+                    iconStyle={{ background: '#c9d2ee', color: '#fff' }}
+                    icon={<IoSchoolOutline />}
+                >
+                    <h3 className="vertical-timeline-element-title">Testing QA Manual</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
+                    <p className="vertical-timeline-element-text">
+                        Certificacion de Testing QA dado por MindHub LA
+                    </p>
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--education"
+                    date="2021 - 2022"
+                    iconStyle={{ background: '#fff', color: '#5c7dd2' }}
+                    icon={<IoSchoolOutline />}
+                >
+                    <h3 className="vertical-timeline-element-title">Responsive Web Design</h3>
+                    <h4 className="vertical-timeline-element-subtitle">Certificacion</h4>
+                    <p className="vertical-timeline-element-text">
+                        Certificacion de Diseño Web Responsive
+                    </p>
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: '#c9d2ee', color: '#5c7dd2' }}
                     contentArrowStyle={{ borderRight: '7px solid #c9d2ee' }}
@@ -54,49 +95,9 @@ const LineaDeTiempoVertical = () => {
                     </p>
                 </VerticalTimelineElement>
 
+
                 <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="2023 - 2024"
                     iconStyle={{ background: '#fff', color: '#5c7dd2' }}
-                    icon={<IoSchoolOutline />}
-                >
-                    <h3 className="vertical-timeline-element-title">Curso Oracle/Alura</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                    <p className="vertical-timeline-element-text">
-                        Curso de Desarrollo Frontend (HTML, CSS, JS y React)
-                    </p>
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    contentStyle={{ background: '#c9d2ee', color: '#5c7dd2' }}
-                    contentArrowStyle={{ borderRight: '7px solid #c9d2ee' }}
-                    date="November 2012"
-                    iconStyle={{ background: '#c9d2ee', color: '#fff' }}
-                    icon={<IoSchoolOutline />}
-                >
-                    <h3 className="vertical-timeline-element-title">Testing QA Manual</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                    <p className="vertical-timeline-element-text">
-                        Certificacion de Testing QA dado por MindHub LA
-                    </p>
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="2002 - 2006"
-                    iconStyle={{ background: '#fff', color: '#5c7dd2' }}
-                    icon={<IoSchoolOutline />}
-                >
-                    <h3 className="vertical-timeline-element-title">Responsive Web Design</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Certificacion</h4>
-                    <p className="vertical-timeline-element-text">
-                        Certificacion de Diseño Web Responsive
-                    </p>
-                </VerticalTimelineElement>
-
-                <VerticalTimelineElement
-                    iconStyle={{ background: '#e4e5fb', color: '#5c7dd2' }}
                     icon={<FaStar />}
                 />
             </VerticalTimeline>
